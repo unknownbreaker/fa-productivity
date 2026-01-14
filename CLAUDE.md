@@ -18,6 +18,9 @@ jira-ticket-page/
 │   ├── options.ts        # Options page logic
 │   ├── options.html      # Options page UI
 │   └── options.css       # Options styling
+├── scripts/
+│   ├── tag.sh            # Semver tagging script
+│   └── changelog.sh      # Changelog generator
 ├── dist/                 # Compiled output (git-ignored)
 ├── manifest.json         # Chrome extension manifest
 ├── package.json          # Node dependencies and scripts
@@ -28,6 +31,13 @@ jira-ticket-page/
 - `npm run build` - One-time build (compiles TS and copies static files to dist/)
 - `npm run watch` - Watch mode for development (auto-rebuilds on .ts changes)
 - `npm run package` - Creates jira-ticket-page.zip for distribution
+
+## Release Commands
+- `npm run tag` - Create a new patch version tag (default)
+- `npm run tag:patch` - Bump patch version (v1.0.0 → v1.0.1)
+- `npm run tag:minor` - Bump minor version (v1.0.0 → v1.1.0)
+- `npm run tag:major` - Bump major version (v1.0.0 → v2.0.0)
+- `npm run changelog` - Generate CHANGELOG.md from git tags and commits
 
 ## Development Workflow
 1. Run `npm run watch` for auto-rebuilding
@@ -44,3 +54,16 @@ jira-ticket-page/
 
 ## Configuration
 Users set their Jira base URL (e.g., `https://company.atlassian.net`) in the extension options page.
+
+## Commit Convention
+This project uses [Conventional Commits](https://www.conventionalcommits.org/). Format: `type: description`
+
+| Prefix | Use for |
+|--------|---------|
+| `feat:` | New features |
+| `fix:` | Bug fixes |
+| `docs:` | Documentation changes |
+| `chore:` | Maintenance, dependencies, build config |
+| `refactor:` | Code changes that don't add features or fix bugs |
+| `style:` | Formatting, whitespace |
+| `test:` | Adding or updating tests |
