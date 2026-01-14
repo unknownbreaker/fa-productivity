@@ -11,7 +11,8 @@
     "tag:patch": "./scripts/tag.sh patch",
     "tag:minor": "./scripts/tag.sh minor",
     "tag:major": "./scripts/tag.sh major",
-    "changelog": "./scripts/changelog.sh"
+    "changelog": "./scripts/changelog.sh",
+    "release": "./scripts/release.sh"
   },
   "devDependencies": {
     "typescript": "^5.3.0",

@@ -20,7 +20,8 @@ jira-ticket-page/
 │   └── options.css       # Options styling
 ├── scripts/
 │   ├── tag.sh            # Semver tagging script
-│   └── changelog.sh      # Changelog generator
+│   ├── changelog.sh      # Changelog generator
+│   └── release.sh        # GitHub release script
 ├── dist/                 # Compiled output (git-ignored)
 ├── manifest.json         # Chrome extension manifest
 ├── package.json          # Node dependencies and scripts
@@ -38,6 +39,7 @@ jira-ticket-page/
 - `npm run tag:minor` - Bump minor version (v1.0.0 → v1.1.0)
 - `npm run tag:major` - Bump major version (v1.0.0 → v2.0.0)
 - `npm run changelog` - Generate CHANGELOG.md from git tags and commits
+- `npm run release` - Build, package, and create GitHub release with latest tag
 
 ## Development Workflow
 1. Run `npm run watch` for auto-rebuilding
