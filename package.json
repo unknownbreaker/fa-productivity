@@ -1,0 +1,15 @@
+{
+  "name": "jira-ticket-page",
+  "version": "1.0.0",
+  "description": "Quick navigation to Jira tickets from a popup",
+  "scripts": {
+    "build": "tsc && npm run copy-static",
+    "copy-static": "cp manifest.json dist/ && cp src/*.html dist/ && cp src/*.css dist/",
+    "watch": "npm run copy-static && tsc --watch",
+    "package": "npm run build && cd dist && zip -r ../jira-ticket-page.zip ."
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/chrome": "^0.0.260"
+  }
+}

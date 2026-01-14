@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Ticket Page",
+  "version": "1.0.0",
+  "description": "Quick navigation to Jira tickets",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Go to Jira ticket"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+}

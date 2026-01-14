@@ -1,0 +1,25 @@
+body {
+  width: 200px;
+  padding: 10px;
+  font-family: system-ui, sans-serif;
+}
+
+#ticket-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#ticket-input:focus {
+  outline: none;
+  border-color: #0052cc;
+}
+
+.error {
+  color: #de350b;
+  font-size: 12px;
+  margin-top: 6px;
+}
