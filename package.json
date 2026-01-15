@@ -1,6 +1,6 @@
 {
   "name": "fa-productivity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quick navigation to Jira tickets from a popup",
   "scripts": {
     "build": "tsc && npm run copy-static",
