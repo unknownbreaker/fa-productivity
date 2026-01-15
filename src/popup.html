@@ -5,8 +5,29 @@
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <input type="text" id="ticket-input" placeholder="WEB-12345" autofocus>
-  <div id="error" class="error"></div>
+  <!-- Main View -->
+  <div id="main-view">
+    <div class="header">
+      <span></span>
+      <button id="settings-btn" class="icon-btn" title="Settings">&#9881;</button>
+    </div>
+    <input type="text" id="ticket-input" placeholder="WEB-12345" autofocus>
+    <div id="error" class="error"></div>
+  </div>
+
+  <!-- Settings View -->
+  <div id="settings-view" class="hidden">
+    <div class="header">
+      <button id="back-btn" class="icon-btn" title="Back">&#8592;</button>
+      <span class="title">Settings</span>
+      <span></span>
+    </div>
+    <label for="base-url">Jira Base URL</label>
+    <input type="text" id="base-url" placeholder="https://company.atlassian.net">
+    <button id="save-btn">Save</button>
+    <div id="status"></div>
+  </div>
+
   <script type="module" src="popup.js"></script>
 </body>
 </html>
