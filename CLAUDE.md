@@ -1,7 +1,7 @@
 # CLAUDE.md
 
 ## Project Overview
-Jira Ticket Page is a Chrome extension (Manifest V3) built with TypeScript that provides quick navigation to Jira tickets via a popup interface.
+FA Productivity is a Chrome extension (Manifest V3) built with TypeScript that provides quick navigation to Jira tickets via a popup interface.
 
 ## Tech Stack
 - TypeScript
@@ -10,7 +10,7 @@ Jira Ticket Page is a Chrome extension (Manifest V3) built with TypeScript that 
 
 ## Project Structure
 ```
-jira-ticket-page/
+fa-productivity/
 ├── src/
 │   ├── popup.ts          # Popup logic - handle input and navigation
 │   ├── popup.html        # Popup UI - input field
@@ -31,7 +31,7 @@ jira-ticket-page/
 ## Build Commands
 - `npm run build` - One-time build (compiles TS and copies static files to dist/)
 - `npm run watch` - Watch mode for development (auto-rebuilds on .ts changes)
-- `npm run package` - Creates jira-ticket-page.zip for distribution
+- `npm run package` - Creates fa-productivity.zip for distribution
 
 ## Release Commands
 - `npm run tag` - Create a new patch version tag (default)

@@ -1,11 +1,11 @@
-# Jira Ticket Page
+# FA Productivity
 
 A Chrome extension for quick navigation to Jira tickets. Click the extension icon, type a ticket ID, and go.
 
 ## Installation
 
 ### From GitHub Release
-1. Download `jira-ticket-page.zip` from the [latest release](https://github.com/unknownbreaker/jira-ticket-page/releases/latest)
+1. Download `fa-productivity.zip` from the [latest release](https://github.com/unknownbreaker/fa-productivity/releases/latest)
 2. Extract to a folder
 3. Open Chrome and go to `chrome://extensions`
 4. Enable **Developer mode** (top right)
@@ -13,8 +13,8 @@ A Chrome extension for quick navigation to Jira tickets. Click the extension ico
 
 ### From Source
 ```bash
-git clone git@github.com:unknownbreaker/jira-ticket-page.git
-cd jira-ticket-page
+git clone git@github.com:unknownbreaker/fa-productivity.git
+cd fa-productivity
 npm install
 npm run build
 ```

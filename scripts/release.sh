@@ -31,9 +31,9 @@ echo "Building extension..."
 npm run build
 
 echo "Packaging extension..."
-cd dist && zip -r ../jira-ticket-page.zip . && cd ..
+cd dist && zip -r ../fa-productivity.zip . && cd ..
 
-ZIP_FILE="jira-ticket-page.zip"
+ZIP_FILE="fa-productivity.zip"
 
 # Check if release already exists
 if gh release view "$TAG" &>/dev/null; then

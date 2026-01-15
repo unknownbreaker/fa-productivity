@@ -1,12 +1,12 @@
 {
-  "name": "jira-ticket-page",
+  "name": "fa-productivity",
   "version": "1.0.0",
   "description": "Quick navigation to Jira tickets from a popup",
   "scripts": {
     "build": "tsc && npm run copy-static",
     "copy-static": "cp manifest.json dist/ && cp src/*.html dist/ && cp src/*.css dist/",
     "watch": "npm run copy-static && tsc --watch",
-    "package": "npm run build && cd dist && zip -r ../jira-ticket-page.zip .",
+    "package": "npm run build && cd dist && zip -r ../fa-productivity.zip .",
     "tag": "./scripts/tag.sh",
     "tag:patch": "./scripts/tag.sh patch",
     "tag:minor": "./scripts/tag.sh minor",

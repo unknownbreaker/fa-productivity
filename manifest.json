@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Jira Ticket Page",
+  "name": "FA Productivity",
   "version": "1.0.0",
   "description": "Quick navigation to Jira tickets",
   "permissions": ["storage"],
